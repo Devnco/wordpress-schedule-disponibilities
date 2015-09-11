@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Schedule Diposnibilities\n"
+"POT-Creation-Date: 2015-09-07 10:39+0100\n"
+"PO-Revision-Date: 2015-09-07 11:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/"
+"workflow/sync.schedule-disponibilities\n"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:21
+msgid "Monday"
+msgstr "Lundi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:22
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:23
+msgid "Wednsday"
+msgstr "Mercredi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:24
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:25
+msgid "Friday"
+msgstr "Vendredi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:26
+msgid "Saturday"
+msgstr "Samedi"
+
+#: /Users/Devnco/web/Workflow/Sites/ophtara.multi-site/workflow/sync.schedule-disponibilities/schedule-disponibilities.php:27
+msgid "Sunday"
+msgstr "Dimanche"
