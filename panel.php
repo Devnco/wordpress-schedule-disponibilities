@@ -1,5 +1,4 @@
 <?php
-	include '../../../index.php';
 	echo __('Monday',SD_TEXTDOMAIN); 
 	echo '<div id="schedule-form">\
             <table id="schedule-table" class="form-table">\
