@@ -50,6 +50,9 @@ Simply install and enable the plugin, you should be able to use it on your posts
 
 == Changelog ==
 
+= 1.0.4 =
+* Add translation system for admin panel (fr).
+
 = 1.0.3 =
 * Fix a bug with js tinymce.
 

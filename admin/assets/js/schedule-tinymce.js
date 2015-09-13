@@ -11,14 +11,14 @@
         init : function(ed, url) {
             ed.addButton('AddSchedule', {
                 type: 'button',
-                title : 'Add a schedule',
-                text: 'Add a schedule',
+                title : jQuery('#schedule-form-wrapper').data('buttonName'),
+                text: jQuery('#schedule-form-wrapper').data('buttonName'),
                 onclick : function() {
                     // triggers the thickbox
                     var width = jQuery(window).width(), H = jQuery(window).height(), W = ( 720 < width ) ? 720 : width;
                     W = W - 80;
                     H = H - 84;
-                    tb_show( 'Schedule Disponibilities Shortcode', '#TB_inline?width=' + W + '&height=' + H + '&inlineId=schedule-form' );
+                    tb_show( jQuery('#schedule-form-wrapper').data('panelName'), '#TB_inline?width=' + W + '&height=' + H + '&inlineId=schedule-form' );
                 }
                 //cmd : 'addShortcode',
                 //icon: false,
@@ -93,61 +93,7 @@
         //     var form = jQuery(d);
         // });
         
-        var form = jQuery('<div id="schedule-form">\
-            <table id="schedule-table" class="form-table">\
-            <tr>\
-                <th><label for="schedule-mo">Monday</label></th>\
-                <td><input type="text" name="mo" id="schedule-mo" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-tu">Tuesday</label></th>\
-                <td><input type="text" name="tu" id="schedule-tu" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-we">Wednesday</label></th>\
-                <td><input type="text" name="we" id="schedule-we" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-th">Thursday</label></th>\
-                <td><input type="text" name="th" id="schedule-th" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-fr">Friday</label></th>\
-                <td><input type="text" name="fr" id="schedule-fr" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-sa">Saturday</label></th>\
-                <td><input type="text" name="sa" id="schedule-sa" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-su">Sunday</label></th>\
-                <td><input type="text" name="su" id="schedule-su" value="" /><br />\
-                <small>Leave blank if you want to hide this day.</small>\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-displayalldays">Display all days</label></th>\
-                <td><input type="checkbox" id="schedule-displayalldays" name="displayalldays" /><br />\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-displayweekdays">Display week days</label></th>\
-                <td><input type="checkbox" id="schedule-displayweekdays" name="displayweekdays" /><br />\
-            </tr>\
-            <tr>\
-                <th><label for="schedule-color">Color</label></th>\
-                <td><input type="text" name="color" id="schedule-color" value="#" /><br />\
-                <small>Specify the color of the schedule in hexadecimal value like #333333.<br /> Leave blank if you want to display default color.</small>\
-            </tr>\
-        </table>\
-        <p class="submit">\
-            <input type="button" id="schedule-submit" class="button-primary" value="Insert Schedule" name="submit" />\
-        </p>\
-        </div>');
+        var form = jQuery('#schedule-form-wrapper').first();
         var table = form.find('table');
         form.appendTo('body').hide();
         
